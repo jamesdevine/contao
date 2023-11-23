@@ -91,7 +91,7 @@ class ModuleRegistration extends Module
 		// Activate account
 		if (strncmp(Input::get('token'), 'reg-', 4) === 0)
 		{
-			$this->activateAcount();
+			$this->activateAccount();
 
 			return;
 		}
@@ -476,7 +476,7 @@ class ModuleRegistration extends Module
 	/**
 	 * Activate an account
 	 */
-	protected function activateAcount()
+	protected function activateAccount()
 	{
 		$this->strTemplate = 'mod_message';
 		$this->Template = new FrontendTemplate($this->strTemplate);
